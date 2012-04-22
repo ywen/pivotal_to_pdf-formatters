@@ -4,9 +4,9 @@ require File.expand_path('../lib/pivotal_to_pdf-formatters/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Yi Wen"]
   gem.email         = ["hayafirst@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{The gem is a collection of possible formatters for the pivotal_to_pdf gem}
+  gem.summary       = %q{The gem is a collection of possible formatters for the pivotal_to_pdf gem}
+  gem.homepage      = "https://github.com/ywen/pivotal_to_pdf-formatters"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
