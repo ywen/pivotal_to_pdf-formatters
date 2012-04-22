@@ -1,7 +1,4 @@
-require "pivotal_to_pdf-formatters/version"
-
-module PivotalToPdf
-  module Formatters
-    # Your code goes here...
-  end
+p "#{File.dirname(__FILE__)}/pivotal_to_pdf-formatters/**/*.rb"
+Dir["#{File.dirname(__FILE__)}/pivotal_to_pdf-formatters/**/*.rb"].each do |f| 
+  require f
 end
