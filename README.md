@@ -20,7 +20,7 @@ Or install it yourself as:
 
 The gem needs to use with pivotal_to_pdf gem. It provides the formatters for the pivotal_to_pdf.
 
-To use an existing formatter, Please see the [pivotal_to_pdf README](https://github.com/ywen/pivotal_to_pdf) formatters section.
+To use an existing formatter, Please see the [pivotal_to_pdf README](https://github.com/ywen/pivotal_to_pdf) **Formatters** section.
 
 To add a formatter, please fork this project, add you own formatter, submit a PR, and I will merge it if I decide no harm can be done and update the version. Once the new version of this gem is released, you can update the gem and your formatter should be ready for use.
 
@@ -28,12 +28,12 @@ To add a formatter, please fork this project, add you own formatter, submit a PR
 
 A formatter must have 2 public interfaces for it to work:
 
-- ```initialize``` takes an array of stories and create a new instance
+- ```initialize``` takes an array of stories
 - ```write_to``` method writes to the your chosen output (PDF, HTML, etc.) in your style.
 
 Your formatter can extends from ```PivotalToPdf::Formatters::Base``` to have ```initialize``` method available.
 
-The ```Default``` formatter is a bad example how to write code. I expect some tests along with your formatter.
+The ```Default``` formatter is a bad example on how to write code. I expect some tests along with your formatter.
 Design it good, do not afraid adding more help classes when needed.
 
 ## Contributing
