@@ -11,8 +11,7 @@ module PivotalToPdf
                                  :margin      => [25, 25, 50, 25],
                                  :page_size   => [302, 432]) do |pdf|
 
-          # pdf.font "#{Prawn::BASEDIR}/data/fonts/DejaVuSans.ttf"
-          # pdf.start_new_page
+          setup_font(pdf)
 
           stories.each_with_index do |story, index|
             padding = 10
@@ -49,6 +48,10 @@ module PivotalToPdf
       rescue Exception
         puts "[!] There was an error while generating the PDF file... What happened was:".foreground(:red)
         raise
+      end
+
+      private
+      def setup_font(pdf)
       end
     end
   end
