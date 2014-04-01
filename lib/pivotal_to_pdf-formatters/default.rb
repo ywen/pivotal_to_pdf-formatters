@@ -30,7 +30,7 @@ module PivotalToPdf
               pdf.fill_color "000000"
             end
             pdf.line(pdf.bounds.bottom_left, pdf.bounds.bottom_right)
-            pdf.stroke_bounds 
+            pdf.stroke_bounds
 
             pdf.text_box story.points, :size => 12, :at => [12, 50], :width => width-18 unless story.points.nil?
             pdf.text_box "Owner: " + (story.respond_to?(:owned_by) ? story.owned_by : "None"),
@@ -43,10 +43,10 @@ module PivotalToPdf
           end
           # pdf.number_pages "<page>/<total>", {:at => [pdf.bounds.right - 16, -28]}
 
-          puts ">>> Generated PDF file in '#{destination}.pdf'".foreground(:green)
+          puts Rainbow(">>> Generated PDF file in '#{destination}.pdf'").foreground(:green)
                                  end
       rescue Exception
-        puts "[!] There was an error while generating the PDF file... What happened was:".foreground(:red)
+        puts Rainbow("[!] There was an error while generating the PDF file... What happened was:").foreground(:red)
         raise
       end
 
