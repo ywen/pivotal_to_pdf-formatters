@@ -36,6 +36,10 @@ Your formatter can extends from ```PivotalToPdf::Formatters::Base``` to have ```
 The ```Default``` formatter is a bad example on how to write code. I expect some tests along with your formatter.
 Design it good, do not afraid adding more help classes when needed.
 
+##Contributors
+* [Yi Wen](https://github.com/ywen)
+* [Luke brown](https://github.com/tsdbrown)
+
 ## Contributing
 
 1. Fork it
