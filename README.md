@@ -39,6 +39,7 @@ Design it good, do not afraid adding more help classes when needed.
 ##Contributors
 * [Yi Wen](https://github.com/ywen)
 * [Luke brown](https://github.com/tsdbrown)
+* [Magne Land](https://github.com/magneland)
 
 ## Contributing
 
