@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "pivotal_to_pdf-formatters"
   gem.require_paths = ["lib"]
   gem.version       = PivotalToPdf::Formatters::VERSION
+  gem.add_runtime_dependency(%q<rainbow>)
   gem.add_development_dependency(%q<rspec>)
   gem.add_development_dependency(%q<rake>)
   gem.add_development_dependency(%q<guard-spork>)
