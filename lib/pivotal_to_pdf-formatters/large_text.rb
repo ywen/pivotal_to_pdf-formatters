@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'prawn'
 require 'rainbow'
+require_relative 'default'
 
 module PivotalToPdf
   module Formatters

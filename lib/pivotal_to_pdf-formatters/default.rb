@@ -5,7 +5,6 @@ require 'rainbow'
 module PivotalToPdf
   module Formatters
     class Default < Base
-      
       def write_to(destination)
         Prawn::Document.generate("#{destination}.pdf",
                                  :page_layout => :landscape,
